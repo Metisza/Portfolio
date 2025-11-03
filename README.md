@@ -1,4 +1,3 @@
-# AdaTech
 # Portfólio
 
 Feito com o modelo entregue no programa Elas+Tech da Ada https://purplefolio.framer.website/
