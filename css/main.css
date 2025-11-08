@@ -412,7 +412,7 @@ body .habilidades .body div p {
 }
 @media screen and (max-width: 600px) {
   body {
-    margin-top: 7rem; /* 🌷 respiro superior extra */
+    margin-top: 7rem;
     margin-bottom: 5rem;
     border: 1 px solid green;
   }
