@@ -16,7 +16,7 @@
 }
 
 body {
-  background-image: url("/imagens/background.jpg");
+  background-image: url("imagens/background.jpg");
   color: var(--font-color);
   font-family: "Poppins", sans-serif;
   font-size: 20px;
@@ -32,6 +32,22 @@ body {
      ============================= */
   /* 🌸 HERO - MOBILE */
   /* 💻 HERO - TABLET */
+  /* =============================
+   💻 PROJETOS
+   ============================= */
+  /* =============================
+   💼 EXPERIÊNCIA
+   ============================= */
+  /* =============================
+   🌷 HABILIDADES
+   ============================= */
+  /* 🌸 MOBILE (até 600px) */
+  /* =============================
+   💜 HISTÓRIA
+   ============================= */
+  /* =============================
+   ⚡ FOOTER (versão final)
+   ============================= */
 }
 body .emphasis {
   color: var(--primary-color);
@@ -93,7 +109,6 @@ body header nav ul li:hover {
   body header {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     gap: 2rem;
     padding: 2rem;
@@ -127,7 +142,6 @@ body #hero {
 }
 body #hero article {
   display: flex;
-  flex: 1;
   flex-direction: column;
   justify-content: center;
   font-size: 2rem;
@@ -172,6 +186,7 @@ body #hero .frame img {
     align-items: center;
     gap: 3rem;
     text-align: center;
+    padding: 0 2rem;
   }
   body #hero .frame {
     order: -1;
@@ -181,11 +196,12 @@ body #hero .frame img {
   }
   body #hero article {
     order: 2;
+    padding: 0 1rem;
   }
   body #hero article .apresentacao-p p,
   body #hero article .title {
     font-size: 3rem;
-    line-height: 3rem;
+    line-height: 3.2rem;
   }
   body #hero article .buttons {
     justify-content: center;
@@ -227,36 +243,30 @@ body #hero .frame img {
     flex-wrap: wrap;
   }
 }
-
-/* =============================
-   💻 PROJETOS
-   ============================= */
-.projeto {
+body .projeto {
   margin-top: 6rem;
   margin-bottom: 8rem;
   text-align: left;
-  /* 🌸 PROJETOS - MOBILE */
-  /* 💻 PROJETOS - TABLET */
 }
-.projeto h1 {
+body .projeto h1 {
   margin-bottom: 3rem;
   font-size: clamp(3rem, 5vw, 4rem);
 }
-.projeto h1 .emphasis {
+body .projeto h1 .emphasis {
   color: var(--primary-color);
 }
-.projeto .alinhamento {
+body .projeto .alinhamento {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 3rem;
   justify-content: center;
 }
-.projeto .projetos {
+body .projeto .projetos {
   margin-bottom: 1rem;
   width: 100%;
   text-align: left;
 }
-.projeto .projetos img {
+body .projeto .projetos img {
   width: 100%;
   height: 250px;
   border-radius: 1.5rem;
@@ -264,80 +274,57 @@ body #hero .frame img {
      object-fit: cover;
   display: block;
 }
-.projeto .projetos .subtitulo {
+body .projeto .projetos .subtitulo {
   font-size: 2rem;
   font-weight: 500;
 }
-.projeto .projetos p {
+body .projeto .projetos p {
   font-size: 1.2rem;
   margin-top: 0.5rem;
 }
 @media screen and (max-width: 600px) {
-  .projeto {
+  body .projeto {
     padding: 4rem 2rem;
   }
-  .projeto h1 {
+  body .projeto h1 {
     font-size: 3.5rem;
     margin-bottom: 3rem;
+    text-align: center;
   }
-  .projeto .alinhamento {
+  body .projeto .alinhamento {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 3rem;
   }
-  .projeto .projetos {
+  body .projeto .projetos {
     width: 100%;
     max-width: 350px;
     padding: 2rem;
     text-align: center;
   }
 }
-@media screen and (max-width: 1024px) and (min-width: 601px) {
-  .projeto {
-    padding: 5rem 4rem;
-  }
-  .projeto h1 {
-    font-size: 4rem;
-  }
-  .projeto .alinhamento {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-  }
-  .projeto .projetos {
-    width: 80%;
-    max-width: 400px;
-    padding: 2.5rem;
-  }
-}
-
-/* =============================
-   💼 EXPERIÊNCIA
-   ============================= */
-.exp {
+body .exp {
   padding: 3rem 0;
   margin-bottom: 5rem;
-  /* 🌸 EXPERIÊNCIA - RESPONSIVO */
 }
-.exp .alinhamento {
+body .exp .alinhamento {
   max-width: 1100px;
   padding: 0 1rem;
 }
-.exp .exp-title {
+body .exp .exp-title {
   font-size: clamp(3rem, 5vw, 4rem);
   margin-bottom: 1.5rem;
 }
-.exp .exp-title .emphasis {
+body .exp .exp-title .emphasis {
   color: var(--primary-color);
 }
-.exp .exp-body {
+body .exp .exp-body {
   display: flex;
   gap: 3rem;
   align-items: flex-start;
 }
-.exp .empresas {
+body .exp .empresas {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
@@ -345,7 +332,7 @@ body #hero .frame img {
   position: relative;
   padding-left: 1.5rem;
 }
-.exp .empresas::before {
+body .exp .empresas::before {
   content: "";
   position: absolute;
   top: 0;
@@ -355,175 +342,165 @@ body #hero .frame img {
   background-color: var(--primary-color);
   border-radius: 2px;
 }
-.exp .empresas .empresa {
+body .exp .empresas .empresa {
   background: none;
   border: none;
-  padding: 0;
   font: inherit;
   cursor: pointer;
   color: #666;
   text-align: left;
   transition: color 0.18s;
 }
-.exp .empresas .empresa.ativa {
+body .exp .empresas .empresa.ativa {
   color: var(--primary-color);
   font-weight: 700;
 }
-.exp .descricao {
+body .exp .descricao {
   flex: 1;
 }
-.exp .descricao .conteudo {
+body .exp .descricao .conteudo {
   display: none;
 }
-.exp .descricao .conteudo.ativo {
+body .exp .descricao .conteudo.ativo {
   display: block;
 }
 @media (max-width: 840px) {
-  .exp .exp-body {
+  body .exp .exp-body {
     flex-direction: column;
     gap: 1.25rem;
   }
-  .exp .empresas {
+  body .exp .empresas {
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
-    min-width: auto;
   }
-  .exp .empresas .hab-title {
-    font-size: 4rem;
-  }
-  .exp .empresas .empresa {
+  body .exp .empresas .empresa {
     padding: 0.25rem 0.5rem;
   }
 }
-
-/* =============================
-   🌷 HABILIDADES
-   ============================= */
-.habilidades {
-  margin-bottom: 5rem;
-  /* 🌸 HABILIDADES - MOBILE */
-  /* 💻 HABILIDADES - TABLET */
+body .habilidades {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  padding: 0 2rem;
+  text-align: center;
 }
-.habilidades .hab-title {
+body .habilidades .hab-title {
   font-size: clamp(3rem, 5vw, 4rem);
+  margin-bottom: 3.5rem;
+  text-align: center;
+  letter-spacing: 0.5px;
 }
-.habilidades .hab-title .emphasis {
+body .habilidades .hab-title .emphasis {
   color: var(--primary-color);
 }
-.habilidades .body {
+body .habilidades .body {
   display: flex;
   gap: 4rem;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-around;
 }
-.habilidades .body div h4 {
+body .habilidades .body div h4 {
   font-size: 2rem;
   text-align: center;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
 }
-.habilidades .body div p {
+body .habilidades .body div p {
   text-align: center;
+  line-height: 1.8rem;
 }
 @media screen and (max-width: 600px) {
-  .habilidades {
-    margin-top: 3rem;
+  body {
+    margin-top: 7rem; /* 🌷 respiro superior extra */
+    margin-bottom: 5rem;
+    border: 1 px solid green;
   }
-  .habilidades .hab-title {
+  body .hab-title {
+    align-items: center;
     font-size: 3.5rem;
     margin-bottom: 3rem;
     text-align: center;
+    width: 100%;
+    display: block;
+    letter-spacing: 0.5px;
   }
-  .habilidades .body {
+  body .body {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
   }
-  .habilidades .body div {
-    width: 90%;
-    max-width: 350px;
+  body .body div {
+    width: 100%;
+    max-width: 380px;
     text-align: center;
+    padding: 0.5rem 0;
+  }
+  body .body div h4 {
+    margin-bottom: 0.6rem;
+  }
+  body .body div p {
+    line-height: 1.8rem;
   }
 }
-@media screen and (max-width: 1024px) and (min-width: 601px) {
-  .habilidades {
-    padding: 5rem 4rem;
-  }
-  .habilidades .hab-title {
-    font-size: 4rem;
-    text-align: center;
-  }
-  .habilidades .body {
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
-  }
-  .habilidades .body div {
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-  }
-}
-
-/* =============================
-   💜 HISTÓRIA
-   ============================= */
-.hystory {
+body .hystory {
   margin-bottom: 5rem;
 }
-.hystory .hystory-title {
+body .hystory .hystory-title {
   font-size: clamp(2.4rem, 5vw, 4rem);
   margin-bottom: 1.5rem;
 }
-.hystory .hystory-title .emphasis {
+body .hystory .hystory-title .emphasis {
   color: var(--primary-color);
 }
-.hystory p {
+body .hystory p {
   margin-bottom: 1rem;
   text-align: justify;
 }
-
-/* =============================
-   ⚡ FOOTER
-   ============================= */
-.footer {
-  /* 🌸 FOOTER - MOBILE */
-  /* 💻 FOOTER - TABLET */
+body .footer {
+  margin-top: 6rem;
+  padding: 3rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
-.footer nav {
-  flex: 1;
+body .footer nav {
   font-size: 1.5rem;
-  margin-bottom: 5rem;
 }
-.footer nav ul {
+body .footer nav ul {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
-  justify-content: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body .footer nav ul li {
+  font-weight: 500;
+  transition: color 0.3s ease;
   cursor: pointer;
 }
-.footer nav ul li {
-  font-weight: 500;
-}
-.footer nav ul li:hover {
+body .footer nav ul li:hover {
   color: var(--primary-color);
 }
 @media screen and (max-width: 600px) {
-  .footer {
+  body .footer {
+    margin-top: 4rem;
     padding: 3rem 2rem;
-    text-align: center;
   }
-  .footer nav ul {
+  body .footer nav ul {
     flex-direction: column;
-    gap: 1.5rem;
-    font-size: 1.7rem;
+    gap: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 @media screen and (max-width: 1024px) and (min-width: 601px) {
-  .footer {
+  body .footer {
     padding: 4rem 3rem;
-    text-align: center;
   }
-  .footer nav ul {
+  body .footer nav ul {
     flex-direction: column;
     gap: 2rem;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
   }
 }/*# sourceMappingURL=main.css.map */
