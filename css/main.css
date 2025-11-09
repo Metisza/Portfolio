@@ -310,7 +310,6 @@ body .exp {
 }
 body .exp .alinhamento {
   max-width: 1100px;
-  padding: 0 1rem;
 }
 body .exp .exp-title {
   font-size: clamp(3rem, 5vw, 4rem);
@@ -374,9 +373,6 @@ body .exp .descricao .conteudo.ativo {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-  }
-  body .exp .empresas .empresa {
-    padding: 0.25rem 0.5rem;
   }
 }
 body .habilidades {
